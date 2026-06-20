@@ -17,6 +17,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/theme.js"></script>
 </head>
 
 <body>
@@ -33,6 +34,16 @@
         <a href="#experience" class="tab-link" data-tab="experience">Experience</a>
         <a href="assets/icons/Son_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="#contact" class="tab-link" data-tab="contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Switch to light mode">
+          <i class="fa fa-sun-o"></i>
+          <i class="fa fa-moon-o"></i>
+        </button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
   </header>
@@ -348,6 +359,24 @@
     }
 
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Hamburger menu
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      hamburger.classList.toggle("open", isOpen);
+      hamburger.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        hamburger.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+      });
+    });
   </script>
 </body>
 
