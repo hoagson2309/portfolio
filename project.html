@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Project — Son Cao</title>
+  <meta name="description" content="Project case study by Son Cao." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="nav-wrap">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html#home" aria-label="Son Cao homepage">
+        <span class="logo">SC</span>
+        <span>Son Cao</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="assets/icons/Son_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container" style="padding:44px 0 56px;">
+      <!-- Back link -->
+      <a href="index.html#projects" class="back-link"><i class="fa fa-arrow-left"></i> Back to Projects</a>
+
+      <!-- Hero -->
+      <div class="project-detail-hero" id="projectHero">
+        <span class="eyebrow" id="projectCategory">Project</span>
+        <h1 id="projectTitle">Loading project...</h1>
+        <p class="hero-description" id="projectSubtitle"></p>
+      </div>
+
+      <!-- Media -->
+      <div class="project-detail-media" id="projectMedia"></div>
+
+      <!-- Content grid -->
+      <div class="project-detail-content">
+        <aside class="project-detail-sidebar">
+          <div class="detail-block">
+            <span class="detail-label">Client</span>
+            <span class="detail-value" id="projectClient"></span>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">Year</span>
+            <span class="detail-value" id="projectYear"></span>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">Role</span>
+            <span class="detail-value" id="projectRole"></span>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">Tools</span>
+            <div class="tags" id="projectTools"></div>
+          </div>
+        </aside>
+
+        <div class="project-detail-body">
+          <div class="detail-section">
+            <h2>Overview</h2>
+            <p id="projectDescription"></p>
+          </div>
+          <div class="detail-section">
+            <h2>Challenge</h2>
+            <p id="projectChallenge"></p>
+          </div>
+          <div class="detail-section">
+            <h2>Outcome</h2>
+            <p id="projectOutcome"></p>
+          </div>
+
+          <div class="button-row" style="margin-top:36px;">
+            <a class="button" href="index.html#projects"><i class="fa fa-arrow-left"></i> All Projects</a>
+            <a class="button secondary" href="https://github.com/hoagson2309/" target="_blank" rel="noopener"><i class="fa fa-github"></i> View Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    &copy; <span id="year"></span> Son Cao. Built for AI, Embedded Systems, and Creative Technology.
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/project-page.js"></script>
+</body>
+
+</html>

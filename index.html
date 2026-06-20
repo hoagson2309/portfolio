@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Son Cao | AI & Embedded Systems Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Son Cao: Computer Science student specializing in AI, Machine Learning, and Embedded Systems." />
+  <meta name="author" content="Son Cao" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="nav-wrap">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand tab-link" href="#home" data-tab="home" aria-label="Son Cao homepage">
+        <span class="logo">SC</span>
+        <span>Son Cao</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#home" class="tab-link active" data-tab="home">Home</a>
+        <a href="#projects" class="tab-link" data-tab="projects">Projects</a>
+        <a href="#experience" class="tab-link" data-tab="experience">Experience</a>
+        <a href="assets/icons/Son_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="#contact" class="tab-link" data-tab="contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HOME ==================== -->
+    <section id="home" class="container tab-panel active">
+      <div class="hero">
+        <div class="hero-card">
+          <span class="eyebrow">Computer Science Student · AI Enthusiast · Embedded Systems Developer</span>
+
+          <h1>
+            Building <span>intelligent systems</span> and creative tech solutions for real-world challenges.
+          </h1>
+
+          <p class="hero-description">
+            Hi, I'm Son Cao, a Computer Science student at Saxion University of Applied Sciences in Enschede.
+            I am passionate about technology and enjoy building projects that combine creativity and problem-solving.
+          </p>
+
+          <p class="hero-description">
+            I have a strong interest in Artificial Intelligence and Machine Learning, especially how intelligent systems
+            can learn from data and be applied to real-world challenges like robotics and automation.
+          </p>
+
+          <p class="hero-description">
+            My focus areas include Computer Vision, Deep Learning, Embedded Systems, and Robotics.
+            I enjoy exploring how AI can be applied to solve practical problems and create intelligent, autonomous systems.
+          </p>
+
+          <div class="button-row">
+            <a class="button tab-link" href="#projects" data-tab="projects"><i class="fa fa-code"></i> View Projects</a>
+            <a class="button secondary tab-link" href="#contact" data-tab="contact"><i class="fa fa-envelope-o"></i> Contact</a>
+          </div>
+        </div>
+
+        <aside class="hero-card profile-card">
+          <div>
+            <img src="assets/images/son-photo.png" alt="Son Cao" class="profile-photo" />
+            <h2>Son Cao</h2>
+            <p class="muted" style="font-weight:600;">Computer Science Student at Saxion UAS</p>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong>5+</strong><span>Projects</span></div>
+            <div class="stat"><strong>2+</strong><span>Years Coding</span></div>
+            <div class="stat"><strong>AI / ES</strong><span>Focus Area</span></div>
+            <div class="stat"><strong>NL</strong><span>Location</span></div>
+          </div>
+
+          <div class="contact-links-mini">
+            <a href="mailto:chson230905@gmail.com"><i class="fa fa-envelope"></i> chson230905@gmail.com</a>
+            <a href="https://www.linkedin.com/in/son-cao-50ba24396/" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/hoagson2309" target="_blank" rel="noopener"><i class="fa fa-github"></i> GitHub</a>
+            <span><i class="fa fa-map-marker"></i> Enschede, The Netherlands</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="container tab-panel">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>A selection of my recent work spanning AI, machine learning, and embedded systems.</p>
+      </div>
+
+      <div class="grid">
+        <a href="project.html?id=nvda-stock" class="card card-link">
+          <img src="assets/images/project-1.png" alt="NVDA Stock Price Prediction" class="project-image" />
+          <h3>NVDA Stock Price Prediction</h3>
+          <div class="project-links">
+            <span class="project-link-btn" onclick="event.preventDefault();window.open('https://github.com/hoagson2309/','_blank')">
+              <i class="fa fa-github"></i> Code
+            </span>
+          </div>
+          <p>
+            Built a machine learning model to predict NVIDIA stock prices based on historical data and market indicators,
+            using feature selection and regression techniques.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Scikit-learn</span>
+          </div>
+        </a>
+
+        <a href="project.html?id=maze-robot" class="card card-link">
+          <img src="assets/images/project-5.png" alt="Autonomous Maze Navigation Robot" class="project-image" />
+          <h3>Autonomous Maze Navigation Robot</h3>
+          <div class="project-links">
+            <span class="project-link-btn" onclick="event.preventDefault();window.open('https://github.com/hoagson2309/','_blank')">
+              <i class="fa fa-github"></i> Code
+            </span>
+          </div>
+          <p>
+            Built an autonomous robot capable of navigating through mazes using sensors and pathfinding algorithms
+            on resource-constrained embedded hardware.
+          </p>
+          <div class="tags">
+            <span class="tag">C/C++</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">Algorithm Design</span>
+          </div>
+        </a>
+
+        <a href="project.html?id=house-price" class="card card-link">
+          <img src="assets/images/project-2.png" alt="House Price Prediction" class="project-image" />
+          <h3>House Price Prediction</h3>
+          <div class="project-links">
+            <span class="project-link-btn" onclick="event.preventDefault();window.open('https://github.com/hoagson2309/','_blank')">
+              <i class="fa fa-github"></i> Code
+            </span>
+          </div>
+          <p>
+            Developed a regression model to predict house prices based on various property features like size,
+            location, and condition using feature engineering techniques.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Regression</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </a>
+
+        <a href="project.html?id=hand-gesture" class="card card-link">
+          <img src="assets/images/project-3.png" alt="Hand Gesture Recognition" class="project-image" />
+          <h3>Hand Gesture Recognition</h3>
+          <div class="project-links">
+            <span class="project-link-btn" onclick="event.preventDefault();window.open('https://github.com/hoagson2309/','_blank')">
+              <i class="fa fa-github"></i> Code
+            </span>
+          </div>
+          <p>
+            Built a real-time hand gesture recognition system using computer vision and deep learning techniques,
+            achieving high accuracy across different lighting conditions.
+          </p>
+          <div class="tags">
+            <span class="tag">Deep Learning</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">MediaPipe</span>
+          </div>
+        </a>
+
+        <a href="project.html?id=sensor-monitoring" class="card card-link">
+          <img src="assets/images/project-4.png" alt="Embedded Sensor Monitoring System" class="project-image" />
+          <h3>Embedded Sensor Monitoring System</h3>
+          <div class="project-links">
+            <span class="project-link-btn" onclick="event.preventDefault();window.open('https://github.com/hoagson2309/','_blank')">
+              <i class="fa fa-github"></i> Code
+            </span>
+          </div>
+          <p>
+            Designed and built an embedded system that monitors sensor data in real-time and displays readings
+            on a connected interface, handling multiple sensor inputs simultaneously.
+          </p>
+          <div class="tags">
+            <span class="tag">C/C++</span>
+            <span class="tag">Raspberry Pi Pico</span>
+            <span class="tag">RTOS</span>
+            <span class="tag">Sensors</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="container tab-panel">
+      <div class="section-head">
+        <h2>Experience & Skills</h2>
+        <p>My technical skills and background across programming, AI, and embedded systems.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-top">
+            <h3><i class="fa fa-graduation-cap"></i> Education</h3>
+          </div>
+          <p class="muted">Saxion University of Applied Sciences · Enschede, The Netherlands</p>
+          <ul class="clean">
+            <li>B.Sc. Computer Science (Applied Computer Science)</li>
+            <li>Focus on AI, Machine Learning, and Embedded Systems</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-top">
+            <h3><i class="fa fa-briefcase"></i> Work Experience</h3>
+          </div>
+          <ul class="clean">
+            <li><strong>ACS Student</strong> — Saxion University of Applied Sciences</li>
+            <li><strong>Sales Assistant</strong> — Calvin Klein</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-top">
+            <h3><i class="fa fa-code"></i> Programming Languages</h3>
+          </div>
+          <div class="tags">
+            <span class="tag">C/C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">C# / JavaScript</span>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-top">
+            <h3><i class="fa fa-server"></i> Core Computer Science</h3>
+          </div>
+          <div class="tags">
+            <span class="tag">Algorithms & Data Structures</span>
+            <span class="tag">Computer Networking</span>
+            <span class="tag">Databases / SQL</span>
+            <span class="tag">Git</span>
+            <span class="tag">OOP</span>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-top">
+            <h3><i class="fa fa-line-chart"></i> AI & Data</h3>
+          </div>
+          <div class="tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">Pandas</span>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-top">
+            <h3><i class="fa fa-cogs"></i> Embedded Systems</h3>
+          </div>
+          <div class="tags">
+            <span class="tag">Raspberry Pi Pico</span>
+            <span class="tag">Arduino/span>
+            <span class="tag">RTOS</span>
+            <span class="tag">Motor Control</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">Serial Communication</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="container tab-panel">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations or opportunities.</p>
+      </div>
+
+      <div class="panel contact-card">
+        <div class="contact-list">
+          <a class="contact-link" href="mailto:chson230905@gmail.com"><i class="fa fa-envelope-o"></i>
+            chson230905@gmail.com</a>
+          <a class="contact-link" href="https://github.com/hoagson2309" target="_blank" rel="noopener noreferrer"><i
+              class="fa fa-github"></i> GitHub · hoagson2309</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/son-cao-50ba24396/" target="_blank" rel="noopener noreferrer"><i
+              class="fa fa-linkedin"></i> LinkedIn · Son Cao</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    &copy; <span id="year"></span> Son Cao. Built for AI, Embedded Systems, and Creative Technology.
+  </footer>
+
+  <script>
+    const tabLinks = document.querySelectorAll(".tab-link");
+    const panels = document.querySelectorAll(".tab-panel");
+
+    function showTab(tabName) {
+      panels.forEach(panel => {
+        panel.classList.toggle("active", panel.id === tabName);
+      });
+      tabLinks.forEach(link => {
+        link.classList.toggle("active", link.dataset.tab === tabName);
+      });
+      if (history.pushState) {
+        history.pushState(null, "", "#" + tabName);
+      }
+      window.scrollTo({ top: 0 });
+    }
+
+    tabLinks.forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        const tabName = link.dataset.tab;
+        if (tabName) showTab(tabName);
+      });
+    });
+
+    window.addEventListener("popstate", () => {
+      const tab = window.location.hash.replace("#", "");
+      if (tab && document.getElementById(tab)) showTab(tab);
+    });
+
+    const initialTab = window.location.hash.replace("#", "");
+    if (initialTab && document.getElementById(initialTab)) {
+      showTab(initialTab);
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
