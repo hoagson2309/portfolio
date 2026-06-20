@@ -4,13 +4,14 @@ Personal portfolio website showcasing my projects in AI, Machine Learning, and E
 
 ## Features
 
-- Hero section with auto-cycling background video slider
-- Scroll-triggered animations (fade, slide, parallax, gradient reveal)
-- Project filtering by category (AI & ML / Embedded)
-- Individual project detail pages
-- About section with light/dark mode transition
-- Responsive navbar with smooth color blending
-- Magnetic hover effects on interactive elements
+- Tab-based single-page navigation (Home, Projects, Experience, Contact)
+- Hero section with auto-cycling background video slider and timeline controls
+- Individual project detail pages with overview, challenge, and outcome sections
+- Light/dark theme toggle with localStorage persistence
+- Scroll-triggered reveal animations and parallax effects
+- Preloader, custom cursor, and text split animations
+- Magnetic hover effects on buttons and links
+- Responsive design
 
 ## Projects
 
@@ -23,23 +24,26 @@ Personal portfolio website showcasing my projects in AI, Machine Learning, and E
 ## Structure
 
 ```
-├── index.html              Main page
+├── index.html              Main page (Home, Projects, Experience, Contact)
 ├── project.html            Project detail page
-├── css/styles.css          All styles
+├── css/styles.css          All styles (light/dark theme via CSS variables)
 ├── js/
-│   ├── projects.js         Project data & hero videos
-│   ├── main.js             Core functionality & animations
-│   └── project-page.js     Project detail page logic
+│   ├── projects.js         Project data & hero video definitions
+│   ├── main.js             Core functionality, hero slider & animations
+│   ├── project-page.js     Project detail page rendering
+│   ├── theme.js            Light/dark theme toggle
+│   └── effects.js          Preloader, custom cursor, smooth scroll & reveals
 └── assets/
     ├── images/             Project screenshots & photos
+    ├── icons/              Social icons & resume PDF
     └── videos/             Hero background videos
 ```
 
 ## How to edit
 
-- **Projects** — Edit `js/projects.js` to add/remove/update projects
+- **Projects** — Edit `js/projects.js` to add/remove/update projects and hero videos
 - **Text & content** — Edit `index.html`
-- **Colors** — Edit CSS variables at the top of `css/styles.css`
+- **Colors & themes** — Edit CSS variables at the top of `css/styles.css`
 - **Videos** — Drop MP4 files in `assets/videos/` and reference them in `projects.js`
 
 ## Run locally
@@ -48,7 +52,7 @@ Open `index.html` in your browser, or use VS Code with the Live Server extension
 
 ## Tech
 
-HTML / CSS / JavaScript — no frameworks, no dependencies.
+HTML / CSS / JavaScript — no frameworks, no build tools.
 
 ## Author
 
