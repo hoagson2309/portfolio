@@ -719,10 +719,10 @@ ul.clean li {
   transform: scale(1.08);
 }
 
-.theme-toggle .fa-sun-o { display: none; }
+.theme-toggle .icon-sun { display: none; }
 .theme-toggle .fa-moon-o { display: inline; }
 
-[data-theme="dark"] .theme-toggle .fa-sun-o { display: inline; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: inline; }
 [data-theme="dark"] .theme-toggle .fa-moon-o { display: none; }
 
 /* Hamburger */
