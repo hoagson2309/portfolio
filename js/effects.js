@@ -156,43 +156,8 @@
   // ============================================================
   // TEXT SPLIT ANIMATION
   // ============================================================
-  function initTextSplit() {
-    const heading = document.querySelector(".hero h1");
-    if (!heading) return;
-
-    const html = heading.innerHTML;
-    heading.classList.add("split-text");
-    heading.innerHTML = "";
-
-    const parts = html.split(/<br\s*\/?>/i);
-    let totalIndex = 0;
-
-    parts.forEach((part, lineIndex) => {
-      if (lineIndex > 0) {
-        heading.appendChild(document.createElement("br"));
-      }
-
-      const lineSpan = document.createElement("span");
-      lineSpan.className = "split-line";
-
-      const trimmed = part.trim();
-      for (let i = 0; i < trimmed.length; i++) {
-        const charSpan = document.createElement("span");
-        charSpan.className = "char";
-        charSpan.textContent = trimmed[i] === " " ? " " : trimmed[i];
-        charSpan.style.transitionDelay = `${totalIndex * 0.04 + 0.2}s`;
-        lineSpan.appendChild(charSpan);
-        totalIndex++;
-      }
-
-      heading.appendChild(lineSpan);
-    });
-  }
-
-  function revealText() {
-    const heading = document.querySelector(".hero h1");
-    if (heading) heading.classList.add("is-revealed");
-  }
+  function initTextSplit() {}
+  function revealText() {}
 
   // ============================================================
   // IMAGE REVEAL (CLIP-PATH)

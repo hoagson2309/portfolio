@@ -20,7 +20,18 @@
   <script src="js/theme.js"></script>
 </head>
 
-<body>
+<body class="is-loading">
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <span class="preloader-name">Son Cao</span>
+    <div class="preloader-right">
+      <span class="preloader-counter" id="preloaderCounter">0</span>
+      <div class="preloader-bar">
+        <div class="preloader-fill" id="preloaderFill"></div>
+      </div>
+    </div>
+  </div>
+
   <header class="nav-wrap">
     <nav class="container nav" aria-label="Main navigation">
       <a class="brand tab-link" href="#home" data-tab="home" aria-label="Son Cao homepage">
@@ -378,6 +389,7 @@
       });
     });
   </script>
+  <script src="js/effects.js"></script>
 </body>
 
 </html>

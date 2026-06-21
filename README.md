@@ -29,7 +29,6 @@ Personal portfolio website showcasing my projects in AI, Machine Learning, and E
 ├── css/styles.css          All styles (light/dark theme via CSS variables)
 ├── js/
 │   ├── projects.js         Project data & hero video definitions
-│   ├── main.js             Core functionality, hero slider & animations
 │   ├── project-page.js     Project detail page rendering
 │   ├── theme.js            Light/dark theme toggle
 │   └── effects.js          Preloader, custom cursor, smooth scroll & reveals
