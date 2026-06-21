@@ -131,5 +131,23 @@ window.PORTFOLIO_PROJECTS = [
     description: "A gesture-controlled snake game combining TinyML inference on an Arduino Nano 33 BLE with a Pygame desktop application. The Arduino reads accelerometer and gyroscope data from its onboard IMU (BMI270), runs a trained Edge Impulse classifier to recognise hand gestures (up, down, left, right, stop), and sends the detected gesture over serial. The Python side receives the commands and translates them into snake movement in real time, with keyboard fallback if the board is disconnected.",
     challenge: "Key hurdles included: tuning the gesture classifier's confidence threshold and cooldown timing to avoid false positives without making controls feel laggy; implementing a circular buffer with stride-based sliding window inference on the resource-constrained Nano 33 BLE; filtering out idle/noise readings using an accelerometer RMS threshold so the model only runs when real motion is detected; and keeping the serial communication fast enough (115200 baud, non-blocking reads) to not stall the 60 FPS game loop.",
     outcome: "The system works end-to-end: tilt the Arduino in any direction and the snake responds within ~300 ms. A hold-still gesture pauses the game. The Pygame side features smooth interpolated snake movement, a live side panel showing score, current direction, control mode, and a real-time serial data feed. The game supports both Arduino gesture control and keyboard input simultaneously, making it playable even without the hardware."
+  },
+  {
+    id: "hand-controlled-snake",
+    title: "Hand-Controlled Snake",
+    client: "Personal Project",
+    subtitle: "A classic Snake game steered by finger gestures via webcam using MediaPipe hand tracking.",
+    category: "ai",
+    year: "2026",
+    featured: false,
+    mediaType: "image",
+    media: "assets/images/project-7.png",
+    link: "project.html?id=hand-controlled-snake",
+
+    role: "AI / Computer Vision Developer",
+    tools: ["Python", "Pygame", "MediaPipe", "OpenCV", "Computer Vision"],
+    description: "A classic Snake game controlled entirely by finger gestures detected through a webcam. The system uses MediaPipe's hand landmark detection to count raised fingers in real time: 1 finger for up, 2 for down, 3 for left, 4 for right, and a fist or open hand to maintain the current direction. A live webcam preview in the corner shows detected fingertips with green dots and the current finger count.",
+    challenge: "Key hurdles included: achieving reliable finger counting under varying lighting conditions and backgrounds; preventing 180-degree reversals so the snake can't instantly collide with itself; keeping the hand detection latency low enough that controls feel responsive at 5 moves per second; and handling camera initialization across different hardware setups (DSHOW vs. default backends, multiple camera indices).",
+    outcome: "The game runs smoothly with responsive gesture controls. The webcam overlay provides immediate visual feedback on hand detection, making it intuitive to play. The modular codebase separates camera handling, hand detection, snake logic, and rendering into distinct modules, making it easy to extend or adapt."
   }
 ];
